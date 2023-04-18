@@ -11,18 +11,16 @@
     <h2>ToDo</h2>
     <input type="text" placeholder="enter task" id="input">
     <button onclick="action()">iesniegt</button>
-    <div >
-        <ul id="append" style="display: flex; flex-direction: column">
+        <ul id="append">
 
         </ul>
-    </div>
     <script>
 
 function action(){
-    // console.log(1);
     let entry = document.getElementById("input").value;
     let append = document.getElementById("append");
     append.innerHTML += "<li>"+entry+"</li>";
+    document.getElementById("input") = "";
 }
     </script>
 </body>
